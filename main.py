@@ -1,3 +1,5 @@
+# Afternoon
+
 import os
 os.system('clear')
 import tkinter as tk
@@ -59,9 +61,12 @@ def devTempF():
 
 
 def devTempUpdateC(entryc, label):
-    c = float(entryc.get())
-    f = (c * 9/5) + 32
-    label.config(text=f"The temp is {f:.2f} ferenheight")
+    try:
+        c = float(entryc.get())
+        f = (c * 9/5) + 32
+        label.config(text=f"The temp is {f:.2f} ferenheight")
+    except:
+        print("error 1", fg="red")
 
 def devTempC():
     devtempc = tk.Toplevel(root)
@@ -92,6 +97,7 @@ def devTempMenu():
 
 
 def mphUpdate(entry, label):
+
     kph = float(entry.get())
     mph = float(kph * 1.60934)
     label.config(text=f"{mph:.2f} mph")
