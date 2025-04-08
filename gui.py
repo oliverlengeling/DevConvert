@@ -1,4 +1,4 @@
-# Afternoon
+# DISCONTINUED FOR NOW
 
 import os
 os.system('clear')
