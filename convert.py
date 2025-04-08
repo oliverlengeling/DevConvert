@@ -1,4 +1,5 @@
 import os
+import math
 os.system('clear')
 
 # v1.0.0
@@ -66,6 +67,18 @@ def speed():
 
 def calc():
     os.system('clear')
+    print('1: 4 function')
+    print('2: Square root')
+
+    calc = int(input('Enter: '))
+
+    if calc == 1:
+        calc1()
+    elif calc == 2:
+        calc2()
+
+def calc1():
+    os.system('clear')
 
     print('1: Add')
     print('2: Subtract')
@@ -76,46 +89,72 @@ def calc():
 
     if calcMenu == 1:
         os.system('clear')
-        print('Add')
-        x = float(input('Number 1: '))
-        y = float(input('Number 2: '))
-        z = float(x + y)
-        print(z)
-        input('Enter to continue')
+        try:
+            print('Add')
+            x = float(input('Number 1: '))
+            y = float(input('Number 2: '))
+            z = float(x + y)
+            print(z)
+            input('Enter to continue')
+        except:
+            print('Error')
+            input('Enter to go home')
         mainMenu()
 
     elif calcMenu == 2:
         os.system('clear')
         print('Subtract')
-        x = float(input('Number 1: '))
-        y = float(input('Number 2: '))
-        z = float(x - y)
-        print(z)
-        input('Enter to continue')
+        try:
+            x = float(input('Number 1: '))
+            y = float(input('Number 2: '))
+            z = float(x - y)
+            print(z)
+            input('Enter to continue')
+        except:
+            print('Error')
+            input('Enter to go home')
         mainMenu()
 
     elif calcMenu == 3:
         os.system('clear')
-        print('Multiply')
-        x = float(input('Number 1: '))
-        y = float(input('Number 2: '))
-        z = float(x * y)
-        print(z)
-        input('Enter to continue')
+        try:
+            print('Multiply')
+            x = float(input('Number 1: '))
+            y = float(input('Number 2: '))
+            z = float(x * y)
+            print(z)
+            input('Enter to continue')
+        except:
+            print('Error')
+            input('Enter to go home')
         mainMenu()
 
     elif calcMenu == 4:
         os.system('clear')
-        print('Divide')
-        x = float(input('Number 1: '))
-        y = float(input('Number 2: '))
-        z = float(x / y)
-        print(z)
-        input('Enter to continue')
+        try:
+            print('Divide')
+            x = float(input('Number 1: '))
+            y = float(input('Number 2: '))
+            z = float(x / y)
+            print(z)
+            input('Enter to continue')
+        except:
+            print('Error')
+            input('Enter to go home')
         mainMenu()
+
     elif calcMenu > 4:
         input('Error press enter')
         mainMenu()
+
+def calc2():
+    os.system('clear')
+    print('Square root')
+    x = float(input('Number: '))
+    y = float(math.sqrt(x))
+    print(y)
+    input('Enter to continue')
+    mainMenu()
 
 def mainMenu():
     os.system('clear')
