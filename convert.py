@@ -39,8 +39,8 @@ def temp():
 def speed():
     os.system('clear')
 
-    print('1: mph to kph')
-    print('2: kph to mph')
+    print('1: MPH to KPH')
+    print('2: KPH to MPH')
 
     speedMenu = int(input('Enter: '))
 
@@ -62,11 +62,65 @@ def speed():
         print('Error: Returning home...')
         mainMenu()
 
+def calc():
+    os.system('clear')
+
+    print('1: Add')
+    print('2: Subtract')
+    print('3: Multiply')
+    print('4: Divide')
+
+    calcMenu = int(input('Enter: '))
+
+    if calcMenu == 1:
+        os.system('clear')
+        print('Add')
+        x = float(input('Number 1: '))
+        y = float(input('Number 2: '))
+        z = float(x + y)
+        print(z)
+        input('Enter to continue')
+        mainMenu()
+
+    elif calcMenu == 2:
+        os.system('clear')
+        print('Subtract')
+        x = float(input('Number 1: '))
+        y = float(input('Number 2: '))
+        z = float(x - y)
+        print(z)
+        input('Enter to continue')
+        mainMenu()
+
+    elif calcMenu == 3:
+        os.system('clear')
+        print('Multiply')
+        x = float(input('Number 1: '))
+        y = float(input('Number 2: '))
+        z = float(x * y)
+        print(z)
+        input('Enter to continue')
+        mainMenu()
+
+    elif calcMenu == 4:
+        os.system('clear')
+        print('Divide')
+        x = float(input('Number 1: '))
+        y = float(input('Number 2: '))
+        z = float(x / y)
+        print(z)
+        input('Enter to continue')
+        mainMenu()
+
 def mainMenu():
     os.system('clear')
+    print('Welcome to DevConvert')
+    print('')
     print('1: Sales tax')
     print('2: Temp')
     print('3: MPH to KPH')
+    print('4: Calculator ')
+    print('5: Exit')
 
     global menu
     menu = int(input('Enter: '))
@@ -77,7 +131,13 @@ def mainMenu():
         temp()
     elif menu == 3:
         speed()
+    elif menu == 4:
+        calc()
+    elif menu == 5:
+        os.system('clear')
+        exit()
     else:
         print("error")
+        mainMenu()
 mainMenu()
 
