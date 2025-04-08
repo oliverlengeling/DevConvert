@@ -7,7 +7,12 @@ Non-GUI Version: Compile and boom thats it.
 
 The non-GUI version has more features like setting sales tax percentage from the default of 7% and is more intuitive.
 
-### Install:
+### Install
+1. Download python if you don't already have it
+2. Download "convert.py" from the stable releases
+3. Run, python "convert.py" in a terminal window (Linux and Mac) or CMD (Windows)
+
+### Install (GUI):
 1. Unzip source code
-2. Compile the version of your choosing using, python "convert.py" or python "gui.py"
+2. Compile the version of your choosing using, python "gui.py"
 3. Use it
