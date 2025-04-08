@@ -39,23 +39,23 @@ def temp():
 def speed():
     os.system('clear')
 
-    print('1: KPH to MPH')
-    print('2: MPH to KPH')
+    print('1: mph to kph')
+    print('2: kph to mph')
 
     speedMenu = int(input('Enter: '))
 
     if speedMenu == 1:
         os.system('clear')
-        kph = float(input('KPH: '))
-        mph = float(kph * 1.60934)
-        print(f'{mph:.2f} MPH')
+        mph = float(input('MPH: '))
+        kph = float(mph * 1.60934)
+        print(f'{kph:.2f} kph')
         input('Enter to continue')
         mainMenu()
     elif speedMenu == 2:
         os.system('clear')
-        mph = float(input('MPH: '))
-        kph = float(mph * 0.621371)
-        print(f'{kph:.2f} KPH')
+        kph = float(input('KPH: '))
+        mph = float(kph * 0.621371)
+        print(f'{mph:.2f} MPH')
         input('Enter to continue')
         mainMenu()
     else:
