@@ -1,4 +1,4 @@
-# IMPORTANT: The GUI version is no longer supported and will remain as is. All future updates will go into the convert.py file.
+# IMPORTANT: The GUI version is no longer supported and will remain as is..
 
 In the "Stable" tag the GUI version with limited capabilities is available in the source code.
 
