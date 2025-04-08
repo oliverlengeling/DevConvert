@@ -1,5 +1,7 @@
 # IMPORTANT: The GUI version is no longer supported and will remain as is. All future updates will go into the convert.py file.
 
+In the "Stable" tag the GUI version with limited capabilities is available in the source code.
+
 GUI Version: Compile using python 3 with tkinter installed if not already.
 Non-GUI Version: Compile and boom thats it.
 
