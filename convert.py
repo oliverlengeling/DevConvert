@@ -1,6 +1,8 @@
 import os
 os.system('clear')
 
+# v1.0.0
+
 def tax():
     os.system('clear')
     salesTax = int(input('Enter sales tax percentage: '))
