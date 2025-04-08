@@ -113,6 +113,9 @@ def calc():
         print(z)
         input('Enter to continue')
         mainMenu()
+    elif calcMenu > 4:
+        input('Error press enter')
+        mainMenu()
 
 def mainMenu():
     os.system('clear')
