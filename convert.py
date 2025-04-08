@@ -39,8 +39,8 @@ def temp():
 def speed():
     os.system('clear')
 
-    print('1: MPH to KPH')
-    print('2: KPH to MPH')
+    print('1: KPH to MPH')
+    print('2: MPH to KPH')
 
     speedMenu = int(input('Enter: '))
 
