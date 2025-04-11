@@ -3,7 +3,7 @@ import math
 os.system('clear')
 
 <<<<<<< HEAD
-# v1.2.1
+# v1.2.2
 
 def tax():
     try:
