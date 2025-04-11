@@ -2,7 +2,7 @@ import os
 import math
 os.system('clear')
 
-# v1.2.1
+# v1.3.1
 
 def tax():
     try:
