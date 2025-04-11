@@ -1,9 +1,15 @@
 import os
 import math
+<<<<<<< HEAD
 import random
 os.system('clear')
 
 # v1.4.1
+=======
+os.system('clear')
+
+# v1.3.1
+>>>>>>> origin
 
 def tax():
     try:
@@ -290,6 +296,7 @@ def calc4():
         except:
             mainMenu()
 
+<<<<<<< HEAD
 def rand():
     try:
         print('Enter an integer')
@@ -315,6 +322,8 @@ def randRepeat():
             z = random.randint(x, y)
             print(z)
             input()
+=======
+>>>>>>> origin
 def exit():
     os.system('clear')
 
@@ -326,8 +335,12 @@ def mainMenu():
     print('2: Temp')
     print('3: MPH to KPH')
     print('4: Calculator ')
+<<<<<<< HEAD
     print('5: Random integer')
     print('6: Exit')
+=======
+    print('5: Exit')
+>>>>>>> origin
 
     global menu
     menu = int(input('Enter: '))
@@ -340,8 +353,11 @@ def mainMenu():
         speed()
     elif menu == 4:
         calc()
+<<<<<<< HEAD
     elif menu == 5:
         randRepeat()
+=======
+>>>>>>> origin
     else:
         print("error")
         exit()
