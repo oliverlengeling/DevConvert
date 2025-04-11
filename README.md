@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # oliverlengeling
-=======
+
 # IMPORTANT: The GUI version is no longer supported and will remain as is.
 
 In the "Stable" tag the GUI version with limited capabilities is available in the source code.
@@ -19,4 +19,4 @@ The non-GUI version has more features like setting sales tax percentage from the
 1. Unzip source code
 2. Compile the version of your choosing using, python "gui.py"
 3. Use it
->>>>>>> origin
+
