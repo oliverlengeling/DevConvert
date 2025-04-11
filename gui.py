@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 # Afternoon
-=======
+
 # DISCONTINUED FOR NOW
->>>>>>> origin
+
 
 import os
 os.system('clear')
