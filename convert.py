@@ -2,9 +2,7 @@ import os
 import math
 os.system('clear')
 
-<<<<<<< HEAD
 # v1.2.1
-
 
 def tax():
     try:
@@ -18,18 +16,6 @@ def tax():
     except:
         print('Error')
         input('Enter to home')
-=======
-# v1.0.0
-
-def tax():
-    os.system('clear')
-    salesTax = int(input('Enter sales tax percentage: '))
-    salesTax = salesTax / 100
-    cost = float(input('Cost: '))
-    final = cost * salesTax + cost
-    print(f"${final:.2f}")
-    input('Enter to continue')
->>>>>>> origin
     mainMenu()
 
 def temp():
@@ -41,7 +27,6 @@ def temp():
     tempMenu = int(input('Enter '))
 
     if tempMenu == 1:
-<<<<<<< HEAD
         try:
             os.system('clear')
             c = int(input('C: '))
@@ -66,21 +51,6 @@ def temp():
             print('Error')
             input('Enter to go home')
             mainMenu()
-=======
-        os.system('clear')
-        c = int(input('C: '))
-        f = (c * 9 / 5) + 32
-        print(f'{f:.2f}F')
-        input('Enter to continue')
-        mainMenu()
-    elif tempMenu == 2:
-        os.system('clear')
-        f = int(input('F: '))
-        c = (f - 32) * 5 / 9
-        print(f'{c:.2f}C')
-        input('Enter to continue')
-        mainMenu()
->>>>>>> origin
     else:
         mainMenu()
 
@@ -93,7 +63,6 @@ def speed():
     speedMenu = int(input('Enter: '))
 
     if speedMenu == 1:
-<<<<<<< HEAD
         try:
             os.system('clear')
             mph = float(input('MPH: '))
@@ -118,21 +87,6 @@ def speed():
             print('Error')
             input('Enter to go home')
             mainMenu()
-=======
-        os.system('clear')
-        mph = float(input('MPH: '))
-        kph = float(mph * 1.60934)
-        print(f'{kph:.2f} kph')
-        input('Enter to continue')
-        mainMenu()
-    elif speedMenu == 2:
-        os.system('clear')
-        kph = float(input('KPH: '))
-        mph = float(kph * 0.621371)
-        print(f'{mph:.2f} MPH')
-        input('Enter to continue')
-        mainMenu()
->>>>>>> origin
     else:
         print('Error: Returning home...')
         mainMenu()
@@ -141,7 +95,6 @@ def calc():
     os.system('clear')
     print('1: 4 function')
     print('2: Square root')
-<<<<<<< HEAD
     print('3: Power of')
     print('4: Shapes')
 
@@ -160,15 +113,6 @@ def calc():
             calc()
     except:
         mainMenu()
-=======
-
-    calc = int(input('Enter: '))
-
-    if calc == 1:
-        calc1()
-    elif calc == 2:
-        calc2()
->>>>>>> origin
 
 def calc1():
     os.system('clear')
@@ -190,15 +134,8 @@ def calc1():
             print(z)
             input('Enter to continue')
         except:
-<<<<<<< HEAD
             calc()
         calc()
-=======
-            print('Error')
-            input('Enter to go home')
-        mainMenu()
-
->>>>>>> origin
     elif calcMenu == 2:
         os.system('clear')
         print('Subtract')
@@ -246,7 +183,6 @@ def calc1():
         mainMenu()
 
 def calc2():
-<<<<<<< HEAD
     try:
         os.system('clear')
         print('Square root')
@@ -355,15 +291,6 @@ def calc4():
 
 def exit():
     os.system('clear')
-=======
-    os.system('clear')
-    print('Square root')
-    x = float(input('Number: '))
-    y = float(math.sqrt(x))
-    print(y)
-    input('Enter to continue')
-    mainMenu()
->>>>>>> origin
 
 def mainMenu():
     os.system('clear')
@@ -386,18 +313,7 @@ def mainMenu():
         speed()
     elif menu == 4:
         calc()
-<<<<<<< HEAD
     else:
         print("error")
         exit()
 mainMenu()
-=======
-    elif menu == 5:
-        os.system('clear')
-        exit()
-    else:
-        print("error")
-        mainMenu()
-mainMenu()
-
->>>>>>> origin
