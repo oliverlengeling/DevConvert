@@ -3,7 +3,7 @@ import math
 import random
 os.system('clear')
 
-# v1.4.0
+# v1.4.1
 
 def tax():
     try:
