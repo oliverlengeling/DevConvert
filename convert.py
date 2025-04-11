@@ -289,7 +289,8 @@ def calc4():
         except:
             mainMenu()
 
-
+def exit():
+    os.system('clear')
 
 def mainMenu():
     os.system('clear')
@@ -299,6 +300,7 @@ def mainMenu():
     print('2: Temp')
     print('3: MPH to KPH')
     print('4: Calculator ')
+    print('5: Exit')
 
     global menu
     menu = int(input('Enter: '))
@@ -313,5 +315,5 @@ def mainMenu():
         calc()
     else:
         print("error")
-        mainMenu()
+        exit()
 mainMenu()
