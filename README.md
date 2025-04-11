@@ -1,6 +1,3 @@
-
-# oliverlengeling
-
 # IMPORTANT: The GUI version is no longer supported and will remain as is.
 
 In the "Stable" tag the GUI version with limited capabilities is available in the source code.
