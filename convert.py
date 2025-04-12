@@ -311,29 +311,37 @@ def money():
     elif moneyMenu == 2:
         mainMenu()
 
+# Inflation
 e = 0.88
 c = 1.39
+p = 20.29
 
 def usd():
     os.system('clear')
     print('1: To Euro')
     print('2: To Canadian')
+    print('3: To Peso')
 
     usdMenu = int(input('Enter: '))
     os.system('clear')
     if usdMenu == 1:
-        x = float(input('USD: '))
-        y = x * e
-        print(f'{y:.2f} Euros')
+        usd = float(input('USD: '))
+        euro = usd * e
+        print(f'{euro:.2f} Euros')
         input('Enter to continue')
         money()
     if usdMenu == 2:
-        X = float(input('USD: '))
-        Y = X * c
-        print(f'{Y:.2f} Canadian')
+        usd = float(input('USD: '))
+        can = usd * c
+        print(f'{can:.2f} Canadian')
         input('Enter to continue')
         money()
-
+    if usdMenu == 3:
+        usd = float(input('USD: '))
+        peso = usd * p
+        print(f'{peso:.2f} Pesos')
+        input('Enter to continue')
+        money()
 
 def exit():
     os.system('clear')
