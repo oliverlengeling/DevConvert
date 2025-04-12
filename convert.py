@@ -304,17 +304,20 @@ def rand():
 def money():
     os.system('clear')
     print('1: USD')
-    print('2: Main menu')
+    print('2: Euro')
     moneyMenu = int(input('Enter: '))
     if moneyMenu == 1:
         usd()
     elif moneyMenu == 2:
+        euro()
+    elif moneyMenu == 3:
         mainMenu()
 
 # Inflation
 e = 0.88
 c = 1.39
 p = 20.29
+u = 1.14
 
 def usd():
     os.system('clear')
@@ -340,6 +343,35 @@ def usd():
         usd = float(input('USD: '))
         peso = usd * p
         print(f'{peso:.2f} Pesos')
+        input('Enter to continue')
+        money()
+def euro():
+    os.system('clear')
+    print('1: To USD')
+    print('2: To Peso')
+    print('3: To Canadian')
+
+    euroMenu = int(input('Euro: '))
+
+    if euroMenu == 1:
+        os.system('clear')
+        euro = float(input('Euro: '))
+        usd = float(euro * u)
+        print(f'{usd} USD')
+        input('Enter to continue')
+        money()
+    if euroMenu == 2:
+        os.system('clear')
+        euro = float(input('Euro: '))
+        peso = float(euro * p)
+        print(f'{peso} Pesos')
+        input('Enter to continue')
+        money()
+    if euroMenu == 3:
+        os.system('clear')
+        euro = float(input('Euro: '))
+        can = float(euro * c)
+        print(f'{can} Canadian')
         input('Enter to continue')
         money()
 
