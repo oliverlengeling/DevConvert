@@ -1,5 +1,5 @@
 > [!WARNING]
-> ### GUI version not being developed any further!
+> # GUI version not being developed any further!
 
 Download with git clone or download "convert.py" from the lastest releases.
 
