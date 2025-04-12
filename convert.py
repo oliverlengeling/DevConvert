@@ -3,7 +3,6 @@ import math
 import random
 os.system('clear')
 # v1.4.1
-os.system('clear')
 
 def tax():
     try:
@@ -290,20 +289,6 @@ def calc4():
             mainMenu()
 
 def rand():
-    try:
-        print('Enter an integer')
-        x = int(input('Number 1: '))
-        y = int(input('Number 2: '))
-        z = random.randint(x, y)
-        print(z)
-
-        randMenu = int(input('Enter: '))
-        mainMenu()
-    except:
-        input('error')
-        mainMenu()
-
-def randRepeat():
         z = int(0)
         os.system('clear')
         print('Enter an integer')
@@ -314,6 +299,41 @@ def randRepeat():
             z = random.randint(x, y)
             print(z)
             input()
+        mainMenu()
+
+def money():
+    os.system('clear')
+    print('1: USD')
+    print('2: Main menu')
+    moneyMenu = int(input('Enter: '))
+    if moneyMenu == 1:
+        usd()
+    elif moneyMenu == 2:
+        mainMenu()
+
+e = 0.88
+c = 1.39
+
+def usd():
+    os.system('clear')
+    print('1: To Euro')
+    print('2: To Canadian')
+
+    usdMenu = int(input('Enter: '))
+    os.system('clear')
+    if usdMenu == 1:
+        x = float(input('USD: '))
+        y = x * e
+        print(f'{y:.2f} Euros')
+        input('Enter to continue')
+        money()
+    if usdMenu == 2:
+        X = float(input('USD: '))
+        Y = X * c
+        print(f'{Y:.2f} Canadian')
+        input('Enter to continue')
+        money()
+
 
 def exit():
     os.system('clear')
@@ -327,8 +347,8 @@ def mainMenu():
     print('3: MPH to KPH')
     print('4: Calculator ')
     print('5: Random integer')
-    print('6: Exit')
-    print('5: Exit')
+    print('6: Money')
+    print('7: Exit')
 
     global menu
     menu = int(input('Enter: '))
@@ -342,8 +362,10 @@ def mainMenu():
     elif menu == 4:
         calc()
     elif menu == 5:
-        randRepeat()
+        rand()
+    elif menu == 6:
+        money()
     else:
-        print("error")
+        print("exiting...")
         exit()
 mainMenu()
