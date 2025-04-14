@@ -2,7 +2,7 @@ import os
 import math
 import random
 os.system('clear')
-# v1.4.1
+# v1.5.0
 
 def tax():
     try:
