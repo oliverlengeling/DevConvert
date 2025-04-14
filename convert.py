@@ -343,6 +343,50 @@ def usd():
         input('Enter to continue')
         money()
 
+def games():
+    os.system('clear')
+
+    print('1: Rock paper scissors')
+    gameMenu = input('Enter: ')
+
+    if gameMenu == '':
+        mainMenu()
+
+    if gameMenu == '1':
+        x = random.randint(1, 3)
+        os.system('clear')
+        print('Rock, paper, scissors')
+        user = input('Enter: ')
+
+        if user == 'rock':
+            y = 1
+        elif user == 'paper':
+            y = 2
+        elif user == 'scissors':
+            y = 3
+        elif y == x:
+            print('tie')
+        else:
+            mainMenu()
+
+        if y == 1 and x == 3:
+            print('win')
+            input()
+            games()
+        elif y == 2 and x == 1:
+            print('win')
+            input()
+            games()
+        elif y == 3 and x == 2:
+            print('win')
+            input()
+            games()
+        else:
+            print('lose')
+            input()
+            games()
+    else:
+        mainMenu()
 def exit():
     os.system('clear')
 
@@ -356,7 +400,8 @@ def mainMenu():
     print('4: Calculator ')
     print('5: Random integer')
     print('6: Money')
-    print('7: Exit')
+    print('7: Games')
+    print('8: Exit')
 
     global menu
     menu = int(input('Enter: '))
@@ -373,6 +418,8 @@ def mainMenu():
         rand()
     elif menu == 6:
         money()
+    elif menu == 7:
+        games()
     else:
         print("exiting...")
         exit()
