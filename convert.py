@@ -21,38 +21,16 @@ def tax():
 def temp():
     os.system('clear')
 
-    print('1: C to F')
-    print('2: F to C')
+    temp = float(input('Temp: '))
+    tempType = input('Convert to C or F: ')
 
-    tempMenu = int(input('Enter '))
-
-    if tempMenu == 1:
-        try:
-            os.system('clear')
-            c = int(input('C: '))
-            f = (c * 9 / 5) + 32
-            print(f'{f:.2f}F')
-            input('Enter to continue')
-            mainMenu()
-        except:
-            print('Error')
-            input('Enter to go home')
-            mainMenu()
-
-    elif tempMenu == 2:
-        try:
-            os.system('clear')
-            f = int(input('F: '))
-            c = (f - 32) * 5 / 9
-            print(f'{c:.2f}C')
-            input('Enter to continue')
-            mainMenu()
-        except:
-            print('Error')
-            input('Enter to go home')
-            mainMenu()
-    else:
+    if tempType == 'c' or 'C':
+        temp = (temp - 32) * 5 / 9
+        print(f"{temp} C")
+        input()
         mainMenu()
+    if tempType == 'f' or 'F':
+        temp = (temp * 9 / 5) + 32
 
 def speed():
     os.system('clear')
@@ -417,8 +395,29 @@ def games():
             print('lose')
             input()
             games()
+    elif gameMenu == '2':
+        pass
     else:
         mainMenu()
+
+def weight():
+    os.system('clear')
+    weight = int(input('Weight: '))
+    weightType = input('Convert to Lbs or Kgs: ')
+
+    if weightType == 'Lbs' or 'lbs' or 'Lb' or 'lb' or 'l' or 'LBS' or 'pounds' or 'pound' or '1':
+        weight = weight * 2.205
+        print(f"{weight:.2f} kg")
+        input()
+        mainMenu()
+    if weightType == 'Kgs' or 'kgs' or 'kg' or 'kilo' or 'Kg' or 'k' or 'K' or '2':
+        weight = weight / 2.205
+        print(f"{weight:.2f} lb")
+        input()
+        mainMenu()
+    else:
+        mainMenu()
+
 def exit():
     os.system('clear')
 
@@ -429,11 +428,12 @@ def mainMenu():
     print('1: Sales tax')
     print('2: Temp')
     print('3: MPH to KPH')
-    print('4: Calculator ')
-    print('5: Random integer')
-    print('6: Money')
-    print('7: Games')
-    print('8: Exit')
+    print('4: Lbs to Kgs')
+    print('5: Calculator ')
+    print('6: Random integer')
+    print('7: Money')
+    print('8: Games')
+    print('9: Exit')
 
     global menu
     menu = int(input('Enter: '))
@@ -445,12 +445,14 @@ def mainMenu():
     elif menu == 3:
         speed()
     elif menu == 4:
-        calc()
+        weight()
     elif menu == 5:
-        rand()
+        calc()
     elif menu == 6:
-        money()
+        rand()
     elif menu == 7:
+        money()
+    elif menu == 8:
         games()
     else:
         print("exiting...")
